@@ -1,0 +1,9 @@
+<H1>Bands That Make Her Dance</H1>
+
+<% @band.each do |band| %>
+
+    <ul>
+        <li><a href="<%= band_url(band) %>"><p><%= band.name %></p></a></li>
+    </ul>
+
+<% end %>
